@@ -11,6 +11,7 @@
 </ul>
 
 <h2>Comments</h2>
+<h3>This article has <%= Comment.where(article_id: @article.id).public_count %> Comments so far!</h3>
 <%= render @article.comments %>
 
 <h2>Add a comment:</h2>
